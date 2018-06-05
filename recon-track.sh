@@ -15,7 +15,7 @@ mkdir -p "$directory/$1"
 #	filename=$(echo $2 | md5sum)
 #fi
 
-filename = "$3"
+filename="$3"
 
 
 commit()

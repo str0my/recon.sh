@@ -27,7 +27,7 @@ case $1 in
 		$dir/recon-init.sh "$2"
 		;;
 		"track")
-		$dir/recon-track.sh "$2" "$3"
+		$dir/recon-track.sh "$2" "$3" "$4"
 		;;
 		"sync")
 		$dir/recon-sync.sh
@@ -46,6 +46,9 @@ case $1 in
 		;;
 		"help")
 		write_help "extended"
+		;;
+		"update")
+		$dir/recon-update.sh "$2"
 		;;
 		*)
 		write_help

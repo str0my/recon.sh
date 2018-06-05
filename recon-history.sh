@@ -13,6 +13,6 @@ fi
 #	filename=$(echo $2 | md5sum)
 #fi
 
-filename = "$2"
+filename="$2"
 
 git -C $directory show "$directory/$1/$filename"
